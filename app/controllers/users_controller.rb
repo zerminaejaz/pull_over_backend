@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  has_many :posts
 
   def index
     render json: User.all

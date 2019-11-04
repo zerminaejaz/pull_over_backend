@@ -7,6 +7,8 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.string :case
       t.string :car
       t.string :status
+      t.string :longitude
+      t.string :latitude
 
       t.timestamps
     end

@@ -22,6 +22,8 @@ ActiveRecord::Schema.define(version: 2019_11_01_181011) do
     t.string "case"
     t.string "car"
     t.string "status"
+    t.string "longitude"
+    t.string "latitude"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.index ["user_id"], name: "index_posts_on_user_id"
@@ -31,7 +33,6 @@ ActiveRecord::Schema.define(version: 2019_11_01_181011) do
     t.string "username"
     t.string "picture"
     t.string "number"
-    t.string "location"
     t.string "password_digest"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
