@@ -17,6 +17,8 @@ gem 'puma', '~> 3.11'
 gem 'bcrypt', '~> 3.1.7'
 gem 'pry'
 
+gem 'active_model_serializers'
+
 # JWT
 gem 'jwt'
 
