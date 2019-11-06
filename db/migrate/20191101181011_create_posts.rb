@@ -9,6 +9,7 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.string :status
       t.string :longitude
       t.string :latitude
+      # t.created_at.strftime("%m-%d-%Y")
 
       t.timestamps
     end
