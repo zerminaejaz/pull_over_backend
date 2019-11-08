@@ -20,7 +20,6 @@ ActiveRecord::Schema.define(version: 2019_11_01_181011) do
     t.integer "price"
     t.string "description"
     t.string "case"
-    t.string "car"
     t.string "status"
     t.string "longitude"
     t.string "latitude"

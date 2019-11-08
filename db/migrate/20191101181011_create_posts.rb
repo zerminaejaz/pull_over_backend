@@ -5,7 +5,6 @@ class CreatePosts < ActiveRecord::Migration[6.0]
       t.integer :price
       t.string :description
       t.string :case
-      t.string :car
       t.string :status
       t.string :longitude
       t.string :latitude
