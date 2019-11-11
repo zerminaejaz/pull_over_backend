@@ -33,7 +33,7 @@ end
 private
 
 def post_params
-    params.permit(:user_id, :price, :description, :case, :status )
+    params.permit(:user_id, :price, :description, :case, :status, :latitude, :longitude )
 end
 
 
