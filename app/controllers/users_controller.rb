@@ -6,7 +6,7 @@ class UsersController < ApplicationController
   
   def show
     user = User.find(params[:id])
-    
+  
     render json: user
   end
 
@@ -14,7 +14,7 @@ class UsersController < ApplicationController
     user = User.create(user_params)
     if user.valid?
         payload = {user_id: user.id}
-        token = JWT.encode(payload, secret, true, 'HS256')
+        token = JWT.encode(payload, secret, 'HS256')
         render json: {user: user, token: token}
     else
         render json: {errors: user.errors.full_messages}
